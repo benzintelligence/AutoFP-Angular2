@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-
 import { LayoutModule } from './compartilhado/layout/layout.module';
 
 @NgModule({
@@ -15,7 +15,10 @@ import { LayoutModule } from './compartilhado/layout/layout.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    LayoutModule
+    LayoutModule,
+    RouterModule.forRoot([
+      { path: '', component:  }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
